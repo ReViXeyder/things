@@ -1,0 +1,13 @@
+from random import *
+hp = 100
+while hp > 0:
+    a = randint(0,100)
+    b = randint(0,100)
+    x = randint(0,3)
+    op = "-+/*"
+    c = eval("a"+op[x]+"b")
+    ans = float(input("{:d} {:s} {:d}=\t".format(a,op[x],b)))
+    if ans ==float(c):
+        print("right")
+        hp += 30
+        print(hp)
