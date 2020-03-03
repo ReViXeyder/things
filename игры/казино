@@ -1,5 +1,5 @@
 from random import *
-a,d = map(int,input("Поставьте ставку и число на которое ставите от 0 до 99").split(" "))
+a,d = map(int,input("Поставьте ставку и число на которое ставите от 0 до 99 \n").split(" "))
 chi = randint(0,99)
 if chi <= 5:
     print("Выпало зелёное")
