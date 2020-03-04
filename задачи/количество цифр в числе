@@ -1,0 +1,9 @@
+s,b = map(int,input("Напишите число и любую цифру из него \n").split(" "))
+a = 0
+d = 0
+while s > 0:
+    a = s % 10
+    s //= 10
+    if a == b:
+        d += 1
+print(d)
