@@ -6,8 +6,13 @@ while hp > 0:
     x = randint(0,3)
     op = "-+/*"
     c = eval("a"+op[x]+"b")
-    ans = float(input("{:d} {:s} {:d}=\t".format(a,op[x],b)))
+    ans = float(input("{:d} {:s} {:d}=".format(a,op[x],b)))
     if ans ==float(c):
-        print("right")
-        hp += 30
-        print(hp)
+        print("Правильно!")
+        hp += 10
+        print("Текущее здоровье:", hp)
+    else:
+            print("Неправильно!")
+            hp -= 30
+            print("Текущее здоровье:", hp)
+print("Ты проиграл!")
